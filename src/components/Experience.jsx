@@ -1,14 +1,12 @@
-import { Box, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
+import { Frog } from "./Frog";
 import Lights from "./Lights";
 
 const Experience = () => {
   return (
     <>
-      <Box>
-        <meshStandardMaterial color="teal" />
-      </Box>
+      <Frog />
       <Lights />
-      <OrbitControls />
     </>
   );
 };
