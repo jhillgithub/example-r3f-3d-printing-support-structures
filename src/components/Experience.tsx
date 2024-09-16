@@ -1,4 +1,5 @@
 import { Frog } from "./Frog";
+import Ground from "./Ground";
 import Lights from "./Lights";
 import Points from "./Points";
 
@@ -8,6 +9,7 @@ const Experience = () => {
       <Lights />
       <Frog />
       <Points />
+      <Ground />
     </>
   );
 };
