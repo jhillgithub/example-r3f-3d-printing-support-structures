@@ -2,12 +2,15 @@ import React, { useMemo } from "react";
 import { Line } from "@react-three/drei";
 import { Vector3 } from "three";
 import { useStructureContext } from "../context/StructureContext";
+import { useCurve } from "../hooks/useCurve";
 
 export const SupportStructure = () => {
   const { points } = useStructureContext();
+  const { sampleCurve } = useCurve();
 
   const supports = useMemo(() => {
-    return points.map((point: Vector3) => {
+    const samplePoints = sampleCurve(points, 20);
+    return samplePoints.map((point: Vector3) => {
       const projection = new Vector3(point.x, 0, point.z);
       return [point, projection];
     });
