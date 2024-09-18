@@ -1,8 +1,7 @@
 import React from "react";
 import { MeshProps } from "@react-three/fiber";
-import { DoubleSide } from "three";
 
-const Ground = (props: MeshProps) => {
+export const Ground = (props: MeshProps) => {
   return (
     <mesh
       rotation-x={-Math.PI / 2}
@@ -15,5 +14,3 @@ const Ground = (props: MeshProps) => {
     </mesh>
   );
 };
-
-export default Ground;

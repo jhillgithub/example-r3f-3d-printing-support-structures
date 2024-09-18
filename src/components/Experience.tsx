@@ -1,17 +1,18 @@
+import React from "react";
 import { Frog } from "./Frog";
-import Ground from "./Ground";
-import Lights from "./Lights";
-import Points from "./Points";
+import { Ground } from "./Ground";
+import { Lights } from "./Lights";
+import { Points } from "./Points";
+import { SupportStructure } from "./SupportStructure";
 
-const Experience = () => {
+export const Experience = () => {
   return (
     <>
       <Lights />
       <Frog />
       <Points />
       <Ground />
+      <SupportStructure />
     </>
   );
 };
-
-export default Experience;

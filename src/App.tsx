@@ -1,5 +1,5 @@
 import React from "react";
-import Experience from "./components/Experience";
+import { Experience } from "./components/Experience";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 

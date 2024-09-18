@@ -1,7 +1,7 @@
 import React from "react";
 import { Environment } from "@react-three/drei";
 
-const Lights = () => {
+export const Lights = () => {
   return (
     <>
       <ambientLight intensity={0.1} />
@@ -9,5 +9,3 @@ const Lights = () => {
     </>
   );
 };
-
-export default Lights;
